@@ -44,10 +44,12 @@ class UserTest extends TestCase
        $users= $this->seed('UsersTableSeeder');
         this->assert
     } */
-/*   public function testNameChange(){
+   public function testNameChange(){
        $user = User::inRandomOrder()->first();
-       $user->update();
+       $oldName=$user->name;
+       $user->name='Steve Smith';
+       $this->assertNotSame($oldName,$user->name);
 
-   } */
+   }
 
 }
