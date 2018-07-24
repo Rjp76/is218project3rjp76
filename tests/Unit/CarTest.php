@@ -46,10 +46,18 @@ class CarTest extends TestCase
         }
 
     }
- //   public function testCarCount(){
-   // }
+   // public function testCarCount(){
+    //}
     public function testYearInt(){
       $car = Car::inRandomOrder()->first();
     $this->assertInternalType(isType::TYPE_INT, $car->Year);
     }
+    public function testYearUpdate(){
+        $car = Car::inRandomOrder()->first();
+        $oldYear=$car->Year;
+        $car->Year=2000;
+        $this->assertNotEmpty($oldYear,$car);
+
+    }
+
 }
