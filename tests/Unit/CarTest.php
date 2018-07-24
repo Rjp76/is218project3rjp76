@@ -47,6 +47,7 @@ class CarTest extends TestCase
 
     }
    // public function testCarCount(){
+    // can't figure this test out
     //}
     public function testYearInt(){
       $car = Car::inRandomOrder()->first();
