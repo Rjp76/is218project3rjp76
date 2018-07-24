@@ -51,5 +51,8 @@ class UserTest extends TestCase
        $this->assertNotSame($oldName,$user->name);
 
    }
+   /* public function testUserSeeder(){
+   I'm unable to work out how to do this one
+   } */
 
 }
