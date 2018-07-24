@@ -40,4 +40,14 @@ class UserTest extends TestCase
         $user->save();
         $this->assertTrue($user->delete());
     }
+   /* public function testUserSeederNum(){
+       $users= $this->seed('UsersTableSeeder');
+        this->assert
+    } */
+/*   public function testNameChange(){
+       $user = User::inRandomOrder()->first();
+       $user->update();
+
+   } */
+
 }
