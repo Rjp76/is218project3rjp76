@@ -13,6 +13,8 @@
 
 Route::get('/', 'PageController@index')->name('index');
 Route::get('/about', 'PageController@about')->name('about');
+Route::get('/contact', 'PageController@contact')->name('contact');
+Route::post('/contact', 'PageController@store')->name('contact.store');
 Route::get('/register', 'PageController@register')->name('register');
 Route::get('/login', 'PageController@login')->name('login');
 Route::get('/home', 'PageController@home')->name('home');
